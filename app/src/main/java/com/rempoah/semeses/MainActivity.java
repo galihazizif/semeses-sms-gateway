@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
         String fcmToken = sp.getString("fcmToken","-");
         EditText etToken = (EditText)findViewById(R.id.et_reg_id);
         etToken.setText(fcmToken);
-        
+
     }
 
     @Override
