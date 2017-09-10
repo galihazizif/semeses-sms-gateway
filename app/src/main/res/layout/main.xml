@@ -20,7 +20,17 @@
         android:id="@+id/et_reg_id"
         android:editable="false"
         android:text="-"
+        android:textIsSelectable="true"
         android:layout_below="@id/label_reg_id"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@id/et_reg_id"
+        android:id="@+id/btnRegister"
+        android:text="Register"
+        android:selectAllOnFocus="true"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
