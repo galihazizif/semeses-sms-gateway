@@ -8,7 +8,8 @@ tentunya melalui ponsel android anda sendiri.
 
 Untuk dapat menggunakan Semeses (dengan server Semeses)
 
-1. Unduh apk Semeses pada app/build/outputs/apk
+1. Unduh apk Semeses pada tautan berikut ini
+[Unduh](https://github.com/galihazizif/semeses-sms-gateway/releases)
 
 2. Install dan jalankan
 
@@ -20,5 +21,8 @@ Berikut ini alur jalannya pengiriman SMS menggunakan Semeses
 
 ![Skema semeses](http://semeses.rempoah.com/web/img/skema1.png)
 
-This app will utilize your phone as an sms sender. We can send the message through GCM. 
-Semeses will send the SMS immediatly after the payload received.
+Untuk mengirimkan SMS menggunakan Semeses, pastikan anda sudah melakukan 4 langkah diatas. Anda bisa mengirimkan
+HTTP Request ke server Semeses yang nantinya akan diteruskan kepada layanan Firebase Cloud Messaging.
+
+		https://semeses.rempoah.com/sendsms?token=<token>&recipient=<recipient>&message=<message>
+
