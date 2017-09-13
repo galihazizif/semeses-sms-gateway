@@ -24,22 +24,22 @@ Berikut ini alur jalannya pengiriman SMS menggunakan Semeses
 Untuk mengirimkan SMS menggunakan Semeses, pastikan anda sudah melakukan 4 langkah diatas. Anda bisa mengirimkan pesan yang akan dikirim menggunakan
 HTTP Request ke server Semeses yang nantinya akan diteruskan kepada layanan Firebase Cloud Messaging.
 
-		https://semeses.rempoah.com/sendsms?reg_token=<reg_token>&recipient=<recipient>&message=<message>
+	https://semeses.rempoah.com/sendsms?reg_token=<reg_token>&recipient=<recipient>&message=<message>
 
-		<reg_token> : Token registrasi yang ada pada app Semeses.
-		<recipient> : Nomor penerima SMS
-		<message>	: Pesan SMS
+	<reg_token> : Token registrasi yang ada pada app Semeses.
+	<recipient> : Nomor penerima SMS
+	<message>	: Pesan SMS
 
 
 Contoh: 
 
 
-		https://semeses.rempoah.com/sendsms?reg_token=abcdefghi123456&recipient=081234567890&message=HalloWord
+	https://semeses.rempoah.com/sendsms?reg_token=abcdefghi123456&recipient=081234567890&message=HalloWord
 
 
 Respon:
 
-Jika sukses maka anda akan mendapatkan respon dalam bentuk JSON seperti berikut ini.
+Jika sukses maka anda akan mendapatkan respon dalam bentuk seperti berikut ini.
 
-		{"status":0,"content":"OK"}
+	{"status":0,"content":"OK"}
 
