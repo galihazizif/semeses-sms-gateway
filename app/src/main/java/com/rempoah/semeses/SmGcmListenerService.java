@@ -1,7 +1,9 @@
 
 package com.rempoah.semeses;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.telephony.SmsManager;
 import android.util.Log;
 
@@ -12,8 +14,12 @@ public class SmGcmListenerService extends GcmListenerService {
     @Override
     public void onMessageReceived(String s, Bundle bundle) {
         super.onMessageReceived(s, bundle);
-        sendSms(bundle);
-        Log.d("Pesan", "pesan masuk: " + bundle.getString("text"));
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        Boolean aktif = sharedPreferences.getBoolean("aktif", false);
+        if(aktif){
+            sendSms(bundle);
+        }
     }
 
     public void sendSms(Bundle bundle){

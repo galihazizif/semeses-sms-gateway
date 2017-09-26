@@ -33,4 +33,26 @@
         android:visibility="invisible"
         android:layout_height="wrap_content" />
 
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:id="@+id/on_off_switch"
+        android:layout_below="@+id/et_reg_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jika Semeses dinonaktifkan, request pengiriman SMS akan diabaikan"
+        android:id="@+id/textView"
+        android:layout_below="@+id/on_off_switch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>
